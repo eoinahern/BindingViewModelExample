@@ -1,0 +1,10 @@
+<resources>
+	<string name="app_name">ScoreboardMVVM</string>
+	<string name="screen_name">Court Counter</string>
+	<string name="team_a_txt">Team A</string>
+	<string name="team_b_txt">Team B</string>
+	<string name="two_pts">+ 2 points</string>
+	<string name="three_pts">+ 3 points</string>
+	<string name="free_throw">free throw</string>
+	<string name="reset_txt">Reset</string>
+</resources>
