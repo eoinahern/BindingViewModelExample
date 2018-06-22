@@ -1,14 +1,13 @@
 package scoreboardmvvm.eoinahern.ie.scoreboardmvvm
 
-import android.app.Application
-import android.arch.lifecycle.AndroidViewModel
+import android.arch.lifecycle.ViewModel
 import android.databinding.Observable
 import android.databinding.PropertyChangeRegistry
 
-open class ObservableViewModel constructor(app : Application) : AndroidViewModel(app) , Observable {
+open class ObservableViewModel : ViewModel(), Observable {
 
 	@delegate : Transient
-	private val mCallbacks : PropertyChangeRegistry by lazy{ PropertyChangeRegistry() }
+	private val mCallbacks: PropertyChangeRegistry by lazy { PropertyChangeRegistry() }
 
 	override fun addOnPropertyChangedCallback(callback: Observable.OnPropertyChangedCallback?) {
 		mCallbacks.add(callback)
